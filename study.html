@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Study with Lumora: ask questions, explore Math and English, take quizzes, practice, and find friendly study tips."
+    />
+    <meta name="theme-color" content="#f5f9ff" />
+    <title>Lumora Study Space — learn. explore. create.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Lumora home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none">
+              <path d="M16 3.5 18.8 13l9.7 3-9.7 2.9-2.8 9.6-2.9-9.6-9.6-2.9 9.6-3L16 3.5Z" fill="currentColor" />
+              <circle cx="25.5" cy="7" r="2" fill="currentColor" />
+            </svg>
+          </span>
+          <span class="brand-name">lumora<span>.</span></span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a href="study.html#study">Study</a>
+          <a href="study.html#explore">Explore</a>
+          <a href="study.html#music">Music</a>
+          <a href="study.html#community">Community</a>
+          <a href="study.html#quizzes">Quizzes</a>
+        </nav>
+
+        <a href="study.html#study" class="nav-link">Your space <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> A little space to grow</p>
+            <h1>Curiosity looks <span>good on you.</span></h1>
+            <p class="hero-description">
+              Find your focus, follow a new idea, and make something wonderful along the way.
+              Your next favorite thing starts here.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#study">Let’s get started <span aria-hidden="true">↗</span></a>
+              <a class="button button-quiet" href="#explore"><span class="play-icon" aria-hidden="true">▶</span> Take a look around</a>
+            </div>
+            <div class="hero-note">
+              <div class="avatar-stack" aria-hidden="true">
+                <span>J</span><span>M</span><span>A</span>
+              </div>
+              <p>A happy little corner for <strong>big ideas</strong></p>
+            </div>
+          </div>
+
+          <div class="hero-art" aria-label="A preview of your Lumora learning space">
+            <div class="art-orbit orbit-one"></div>
+            <div class="art-orbit orbit-two"></div>
+            <div class="sparkle sparkle-one" aria-hidden="true">✳</div>
+            <div class="sparkle sparkle-two" aria-hidden="true">✦</div>
+            <div class="study-note">
+              <span class="note-icon">✎</span>
+              <span>little steps, <strong>big things</strong></span>
+            </div>
+            <div class="art-card">
+              <div class="art-card-top">
+                <span class="art-label"><span></span> YOUR LEARNING SPACE</span>
+                <span class="more-dots" aria-hidden="true">···</span>
+              </div>
+              <div class="art-card-title">
+                <div>
+                  <p>MONDAY, MADE YOURS</p>
+                  <h2>Make room<br />for wonder.</h2>
+                </div>
+                <span class="sun-icon" aria-hidden="true">☼</span>
+              </div>
+              <div class="today-card">
+                <div class="today-icon" aria-hidden="true">✦</div>
+                <div class="today-info">
+                  <strong>Today’s little plan</strong>
+                  <span>Study a bit. Explore a lot.</span>
+                </div>
+                <span class="today-arrow" aria-hidden="true">↗</span>
+              </div>
+              <div class="art-progress">
+                <div><span>Your curiosity is growing</span><strong>03 / 05</strong></div>
+                <div class="progress-track"><span></span></div>
+              </div>
+            </div>
+            <div class="floating-bubble bubble-top">✧</div>
+            <div class="floating-bubble bubble-bottom"><span>☁</span> take it easy</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="welcome-strip" aria-label="Lumora's motto">
+        <div class="container welcome-inner">
+          <span>learn.</span><span class="strip-star">✳</span>
+          <span>explore.</span><span class="strip-star">✳</span>
+          <span>create.</span><span class="strip-aside">A fresh page, whenever you need one.</span>
+        </div>
+      </section>
+
+      <section class="section study-section" id="study">
+          <div class="container">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Your learning space</p>
+                <h2>What would you like <span>to work on?</span></h2>
+                <p class="section-intro">Start with a question, learn something new, or jump straight into practice.</p>
+              </div>
+              <span class="study-welcome-note"><span aria-hidden="true">✦</span> Go at your own pace</span>
+            </div>
+            <nav class="study-jump-links" aria-label="Study area sections">
+              <a href="#ask-question"><span>✎</span> Ask a question</a>
+              <a href="#math-help"><span>＋</span> Math help</a>
+              <a href="#english-help"><span>あ</span> English help</a>
+              <a href="#quizzes"><span>✳</span> Quick quizzes</a>
+              <a href="#practice"><span>✓</span> Practice zone</a>
+              <a href="#study-tips"><span>☼</span> Study tips</a>
+              <a href="#quick-guides"><span>▤</span> Quick guides</a>
+            </nav>
+
+            <section class="study-block ask-block" id="ask-question">
+              <div class="study-block-heading">
+                <div>
+                  <p class="eyebrow">Stuck on something?</p>
+                  <h3>Ask a question.</h3>
+                  <p>Write it down in your own words. Getting curious is a great first step.</p>
+                </div>
+                <span class="study-heading-icon question-heading-icon" aria-hidden="true">✎</span>
+              </div>
+              <form class="question-form" id="question-form">
+                <label class="sr-only" for="student-question">Your question</label>
+                <textarea id="student-question" name="question" rows="4" maxlength="1000" required placeholder="What are you trying to understand?"></textarea>
+                <div class="question-form-footer">
+                  <label class="category-select" for="question-category">
+                    <span>Subject</span>
+                    <select id="question-category" name="category">
+                      <option>Math</option>
+                      <option>English</option>
+                      <option>Languages</option>
+                      <option>Science</option>
+                      <option>Other</option>
+                    </select>
+                  </label>
+                  <button class="button button-primary" type="submit">Submit question <span aria-hidden="true">↗</span></button>
+                </div>
+                <p class="form-message" id="question-message" role="status" hidden></p>
+                <p class="form-note">This demo keeps your question on this page and does not send it to anyone.</p>
+              </form>
+            </section>
+
+            <section class="study-block" id="math-help">
+              <div class="study-block-heading">
+                <div>
+                  <p class="eyebrow">Math, made friendlier</p>
+                  <h3>Let’s figure it out.</h3>
+                  <p>Pick a topic for a simple explanation, a worked example, and a couple of practice prompts.</p>
+                </div>
+                <span class="study-heading-icon math-heading-icon" aria-hidden="true">＋</span>
+              </div>
+              <div class="lesson-grid">
+                <details class="lesson-card">
+                  <summary><span class="lesson-icon">x²</span><span><strong>Algebra</strong><small>Make friends with letters</small></span><i>＋</i></summary>
+                  <div class="lesson-content"><p><strong>The idea:</strong> A letter stands in for a number we don’t know yet. Keep both sides of an equation balanced.</p><p class="lesson-example"><strong>Example</strong><br />If x + 4 = 10, subtract 4 from both sides: <b>x = 6</b>.</p><p class="practice-prompt"><strong>Try it:</strong> What is y if y + 7 = 12? &nbsp;·&nbsp; What is a if 3a = 18?</p></div>
+                </details>
+                <details class="lesson-card">
+                  <summary><span class="lesson-icon">＝</span><span><strong>Equations</strong><small>Find the missing value</small></span><i>＋</i></summary>
+                  <div class="lesson-content"><p><strong>The idea:</strong> Whatever you do to one side, do to the other. Undo operations in reverse order.</p><p class="lesson-example"><strong>Example</strong><br />For 2x + 3 = 11, subtract 3, then divide by 2: <b>x = 4</b>.</p><p class="practice-prompt"><strong>Try it:</strong> Solve 2x = 14. &nbsp;·&nbsp; Solve n − 5 = 9.</p></div>
+                </details>
+                <details class="lesson-card">
+                  <summary><span class="lesson-icon">%</span><span><strong>Percentages</strong><small>Think “out of 100”</small></span><i>＋</i></summary>
+                  <div class="lesson-content"><p><strong>The idea:</strong> “Percent” means “per hundred.” Turn a percentage into a decimal by dividing by 100.</p><p class="lesson-example"><strong>Example</strong><br />20% of 50 = 0.20 × 50 = <b>10</b>.</p><p class="practice-prompt"><strong>Try it:</strong> Find 10% of 80. &nbsp;·&nbsp; Find 25% of 40.</p></div>
+                </details>
+                <details class="lesson-card">
+                  <summary><span class="lesson-icon">½</span><span><strong>Fractions</strong><small>Parts of a whole</small></span><i>＋</i></summary>
+                  <div class="lesson-content"><p><strong>The idea:</strong> The denominator tells how many equal parts make a whole; the numerator tells how many parts you have.</p><p class="lesson-example"><strong>Example</strong><br />1/4 + 2/4 = <b>3/4</b>. With matching denominators, add the numerators.</p><p class="practice-prompt"><strong>Try it:</strong> Simplify 4/8. &nbsp;·&nbsp; Add 2/5 + 1/5.</p></div>
+                </details>
+                <details class="lesson-card">
+                  <summary><span class="lesson-icon">△</span><span><strong>Geometry</strong><small>Shapes, space &amp; size</small></span><i>＋</i></summary>
+                  <div class="lesson-content"><p><strong>The idea:</strong> Perimeter measures around a shape; area measures the space inside it.</p><p class="lesson-example"><strong>Example</strong><br />A rectangle 5 cm by 3 cm has area 5 × 3 = <b>15 cm²</b>.</p><p class="practice-prompt"><strong>Try it:</strong> Find the perimeter of a 4 by 2 rectangle. &nbsp;·&nbsp; Find its area.</p></div>
+                </details>
+                <details class="lesson-card">
+                  <summary><span class="lesson-icon">↗</span><span><strong>Graphs</strong><small>Read the story in the data</small></span><i>＋</i></summary>
+                  <div class="lesson-content"><p><strong>The idea:</strong> Check the axes and their labels first. A coordinate is written (x, y): across, then up.</p><p class="lesson-example"><strong>Example</strong><br />The point (2, 3) is 2 steps across and 3 steps up from zero.</p><p class="practice-prompt"><strong>Try it:</strong> In (4, 1), which value is the y-coordinate? &nbsp;·&nbsp; What does a rising line show?</p></div>
+                </details>
+              </div>
+            </section>
+
+            <section class="study-block english-block" id="english-help">
+              <div class="study-block-heading">
+                <div>
+                  <p class="eyebrow">English, one step at a time</p>
+                  <h3>Find the right words.</h3>
+                  <p>Clear explanations and examples for the bits of English that can feel tricky.</p>
+                </div>
+                <span class="study-heading-icon english-heading-icon" aria-hidden="true">Aa</span>
+              </div>
+              <div class="lesson-grid">
+                <details class="lesson-card">
+                  <summary><span class="lesson-icon">Aa</span><span><strong>Grammar</strong><small>How sentences fit together</small></span><i>＋</i></summary>
+                  <div class="lesson-content"><p><strong>The idea:</strong> Grammar is how words work together. A sentence usually needs a subject and a verb.</p><p class="lesson-example"><strong>Example</strong><br /><b>The curious student</b> (subject) <b>asks</b> (verb) a question.</p></div>
+                </details>
+                <details class="lesson-card">
+                  <summary><span class="lesson-icon">✦</span><span><strong>Vocabulary</strong><small>Grow your word garden</small></span><i>＋</i></summary>
+                  <div class="lesson-content"><p><strong>The idea:</strong> Learn a new word with its meaning, a sentence, and a word it connects to.</p><p class="lesson-example"><strong>Example</strong><br /><b>Curious</b> means eager to know or learn. “Mina was curious about the stars.”</p></div>
+                </details>
+                <details class="lesson-card">
+                  <summary><span class="lesson-icon">◷</span><span><strong>Tenses</strong><small>When did it happen?</small></span><i>＋</i></summary>
+                  <div class="lesson-content"><p><strong>The idea:</strong> Verb tenses tell when something happens: past, present, or future.</p><p class="lesson-example"><strong>Example</strong><br /><b>I learn</b> (now) · <b>I learned</b> (before) · <b>I will learn</b> (later).</p></div>
+                </details>
+                <details class="lesson-card">
+                  <summary><span class="lesson-icon">✎</span><span><strong>Writing</strong><small>Get your ideas onto a page</small></span><i>＋</i></summary>
+                  <div class="lesson-content"><p><strong>The idea:</strong> Start with one clear point. Add details that support it, then finish by reminding the reader why it matters.</p><p class="lesson-example"><strong>Example</strong><br />Point → reason → example → a short wrap-up.</p></div>
+                </details>
+                <details class="lesson-card">
+                  <summary><span class="lesson-icon">▤</span><span><strong>Reading</strong><small>Read for the big picture</small></span><i>＋</i></summary>
+                  <div class="lesson-content"><p><strong>The idea:</strong> Preview the title, look for the main idea, and use nearby sentences to work out unfamiliar words.</p><p class="lesson-example"><strong>Example</strong><br />Ask yourself: “What is this paragraph mostly telling me?”</p></div>
+                </details>
+                <details class="lesson-card">
+                  <summary><span class="lesson-icon">!</span><span><strong>Common mistakes</strong><small>Little checks, big difference</small></span><i>＋</i></summary>
+                  <div class="lesson-content"><p><strong>The idea:</strong> Give your work one final read, checking that each sentence is complete and punctuation is in place.</p><p class="lesson-example"><strong>Example</strong><br />“Their going home” → “<b>They’re</b> going home.” They’re means they are.</p></div>
+                </details>
+              </div>
+            </section>
+
+            <section class="study-block quiz-study-block" id="quizzes">
+              <div class="study-block-heading">
+                <div>
+                  <p class="eyebrow">No grades, just good guesses</p>
+                  <h3>Pick a quiz. Play for fun.</h3>
+                  <p>Choose a favorite topic or let Lumora surprise you. One question at a time, just for the joy of it.</p>
+                </div>
+                <span class="study-heading-icon quiz-heading-icon" aria-hidden="true">✳</span>
+              </div>
+              <div class="quiz-lobby" id="quiz-lobby">
+                <div class="quiz-lobby-controls">
+                  <fieldset class="quiz-difficulty-picker">
+                    <legend>Pick your pace</legend>
+                    <label class="difficulty-choice easy-choice"><input type="radio" name="quiz-difficulty" value="Easy" checked /><span>🟢 Easy</span></label>
+                    <label class="difficulty-choice medium-choice"><input type="radio" name="quiz-difficulty" value="Medium" /><span>🟡 Medium</span></label>
+                    <label class="difficulty-choice challenge-choice"><input type="radio" name="quiz-difficulty" value="Challenge" /><span>🔴 Challenge</span></label>
+                  </fieldset>
+                  <button class="surprise-button quiz-surprise-button" id="quiz-surprise" type="button"><span aria-hidden="true">✦</span> Surprise me!</button>
+                </div>
+                <div class="quiz-category-grid">
+                  <section class="quiz-category-card study-quiz-category">
+                    <div class="quiz-category-heading"><span>📚</span><div><h4>Study Quizzes</h4><p>Little brain boosts for curious minds.</p></div></div>
+                    <div class="quiz-topic-list">
+                      <button type="button" data-quiz="math">Math</button><button type="button" data-quiz="english">English</button><button type="button" data-quiz="science">Science</button><button type="button" data-quiz="geography">Geography</button><button type="button" data-quiz="languages">Languages</button><button type="button" data-quiz="general-knowledge">General Knowledge</button>
+                    </div>
+                  </section>
+                  <section class="quiz-category-card world-quiz-category">
+                    <div class="quiz-category-heading"><span>🌍</span><div><h4>World Quizzes</h4><p>Take a tiny trip around the world.</p></div></div>
+                    <div class="quiz-topic-list">
+                      <button type="button" data-quiz="guess-country">Guess the Country</button><button type="button" data-quiz="guess-flag">Guess the Flag</button><button type="button" data-quiz="capitals">Capitals</button><button type="button" data-quiz="landmarks">Landmarks</button><button type="button" data-quiz="culture">Culture</button>
+                    </div>
+                  </section>
+                  <section class="quiz-category-card music-quiz-category">
+                    <div class="quiz-category-heading"><span>🎵</span><div><h4>Music Quizzes</h4><p>Play along with your music knowledge.</p></div></div>
+                    <div class="quiz-topic-list">
+                      <button type="button" data-quiz="guess-song">Guess the Song</button><button type="button" data-quiz="guess-artist">Guess the Artist</button><button type="button" data-quiz="music-genres">Music Genres</button><button type="button" data-quiz="k-pop">K-pop</button><button type="button" data-quiz="general-music">General Music</button>
+                    </div>
+                  </section>
+                  <section class="quiz-category-card fun-quiz-category">
+                    <div class="quiz-category-heading"><span>🧠</span><div><h4>Fun Quizzes</h4><p>Light-hearted picks and playful trivia.</p></div></div>
+                    <div class="quiz-topic-list">
+                      <button type="button" data-quiz="personality">Personality</button><button type="button" data-quiz="which-one">Which One Are You?</button><button type="button" data-quiz="this-or-that">This or That</button><button type="button" data-quiz="would-you-rather">Would You Rather</button><button type="button" data-quiz="random-trivia">Random Trivia</button>
+                    </div>
+                  </section>
+                </div>
+              </div>
+              <div class="quiz-player" id="quiz-player" hidden>
+                <div class="quiz-player-top">
+                  <button class="quiz-back-button" id="quiz-choose-another" type="button">← Choose another quiz</button>
+                  <span class="quiz-player-difficulty" id="quiz-player-difficulty"></span>
+                </div>
+                <div class="quiz-card" id="quiz-game-card" aria-live="polite">
+                  <div class="quiz-meta"><span class="quiz-category">READY WHEN YOU ARE</span><span class="quiz-count" id="quiz-count"></span></div>
+                  <div class="quiz-progress"><span id="quiz-progress"></span></div>
+                  <h3 id="quiz-question"></h3>
+                  <div class="quiz-options" id="quiz-options"></div>
+                  <div class="quiz-feedback" id="quiz-feedback" role="status"></div>
+                  <div class="quiz-bottom">
+                    <span id="quiz-score"></span>
+                    <button class="quiz-next" id="quiz-next" type="button" disabled>Choose an answer</button>
+                  </div>
+                  <div class="quiz-result-actions" id="quiz-result-actions" hidden>
+                    <button class="button button-primary" id="quiz-try-again" type="button">Try again <span aria-hidden="true">↻</span></button>
+                    <button class="community-secondary-button" id="quiz-choose-another-result" type="button">Choose another quiz</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="study-block practice-block" id="practice">
+              <div class="study-block-heading">
+                <div>
+                  <p class="eyebrow">Have a go</p>
+                  <h3>Practice zone.</h3>
+                  <p>Pick a subject and level. Try it first, then check your answer and see how it works.</p>
+                </div>
+                <span class="study-heading-icon practice-heading-icon" aria-hidden="true">✓</span>
+              </div>
+              <div class="practice-card">
+                <div class="practice-controls">
+                  <label for="practice-subject">Subject
+                    <select id="practice-subject"><option value="Math">Math</option><option value="English">English</option></select>
+                  </label>
+                  <label for="practice-difficulty">Difficulty
+                    <select id="practice-difficulty"><option value="Easy">Easy</option><option value="Medium">Medium</option><option value="Challenge">Challenge</option></select>
+                  </label>
+                  <span class="practice-level-note" id="practice-level-note">A gentle warm-up</span>
+                </div>
+                <div class="practice-question">
+                  <span class="practice-question-label">YOUR QUESTION</span>
+                  <h4 id="practice-prompt">What is 8 + 7?</h4>
+                  <form id="practice-form" class="practice-answer-form">
+                    <label class="sr-only" for="practice-answer">Your answer</label>
+                    <input id="practice-answer" name="answer" autocomplete="off" required placeholder="Type your answer" />
+                    <button class="button button-primary" type="submit">Check answer <span aria-hidden="true">→</span></button>
+                    <button class="practice-next" id="practice-next" type="button">Another one <span aria-hidden="true">↻</span></button>
+                  </form>
+                  <p class="practice-feedback" id="practice-feedback" role="status"></p>
+                  <p class="practice-explanation" id="practice-explanation" hidden></p>
+                </div>
+              </div>
+            </section>
+
+            <section class="study-block tips-block" id="study-tips">
+              <div class="study-block-heading">
+                <div>
+                  <p class="eyebrow">Small habits, big help</p>
+                  <h3>Study tips that stick.</h3>
+                  <p>Little ways to make study time feel calmer and more useful.</p>
+                </div>
+                <span class="study-heading-icon tips-heading-icon" aria-hidden="true">☼</span>
+              </div>
+              <div class="tips-grid">
+                <article class="tip-card"><span>01</span><h4>Make words memorable</h4><p>Use a new vocabulary word in your own sentence. Come back to it tomorrow, then again next week.</p></article>
+                <article class="tip-card"><span>02</span><h4>Prep in small steps</h4><p>Break a test topic into bite-sized parts. A short review across a few days beats one late-night cram.</p></article>
+                <article class="tip-card"><span>03</span><h4>Take notes your way</h4><p>Write key ideas in your own words. Leave space to add questions, examples, or a tiny sketch.</p></article>
+                <article class="tip-card"><span>04</span><h4>Give focus a chance</h4><p>Pick one small goal, put distractions aside, and try 20 focused minutes followed by a short break.</p></article>
+                <article class="tip-card"><span>05</span><h4>Beat the “later” feeling</h4><p>Start with just five minutes. Opening your notes and doing the first tiny task is a real start.</p></article>
+              </div>
+            </section>
+
+            <section class="study-block guides-block" id="quick-guides">
+              <div class="study-block-heading">
+                <div>
+                  <p class="eyebrow">The essentials, at a glance</p>
+                  <h3>Quick revision guides.</h3>
+                  <p>Short refreshers to help you remember the important bits.</p>
+                </div>
+                <span class="study-heading-icon guides-heading-icon" aria-hidden="true">▤</span>
+              </div>
+              <div class="guide-grid">
+                <details class="guide-card"><summary><span>＋</span><strong>Fractions &amp; percentages</strong><i>Open guide ↓</i></summary><div class="guide-content"><h4>Fractions</h4><p>For addition, make the denominators match. To simplify, divide top and bottom by the same number.</p><p class="guide-formula">Part ÷ whole = fraction &nbsp;·&nbsp; Fraction × 100 = percent</p><p><strong>Example:</strong> 1/4 = 25%, because 1 ÷ 4 = 0.25.</p><h4>Remember</h4><p>“Of” often means multiply: 20% of 60 = 0.2 × 60 = 12.</p></div></details>
+                <details class="guide-card"><summary><span>＝</span><strong>Solving equations</strong><i>Open guide ↓</i></summary><div class="guide-content"><h4>Keep it balanced</h4><p>Use inverse operations to get the unknown by itself. Do the same thing to both sides.</p><p class="guide-formula">2x + 4 = 10 &nbsp;→&nbsp; 2x = 6 &nbsp;→&nbsp; x = 3</p><h4>Remember</h4><p>Check your answer by putting it back into the original equation.</p></div></details>
+                <details class="guide-card"><summary><span>Aa</span><strong>Sentence essentials</strong><i>Open guide ↓</i></summary><div class="guide-content"><h4>Build a clear sentence</h4><p>A complete sentence expresses a thought and usually has a subject and a verb.</p><p class="guide-formula">Subject + verb + the rest of the idea.</p><h4>Example</h4><p>“The small dog chased its ball.” Subject: the dog. Verb: chased.</p></div></details>
+                <details class="guide-card"><summary><span>◷</span><strong>English tenses</strong><i>Open guide ↓</i></summary><div class="guide-content"><h4>Spot when it happens</h4><p>Present: a habit or now. Past: already happened. Future: will happen later.</p><p class="guide-formula">I read · I read yesterday · I will read tomorrow</p><h4>Remember</h4><p>Keep the tense consistent unless the time changes.</p></div></details>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="section explore-section" id="explore">
+        <div class="container">
+          <div class="explore-page-heading">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Follow your curiosity</p>
+            <h2>Explore<span>.</span></h2>
+            <p class="section-intro">Discover places, ideas, and something new.</p>
+          </div>
+
+          <article class="world-feature">
+            <div class="world-feature-copy">
+              <span class="explore-kicker">YOUR NEXT ADVENTURE</span>
+              <h3>Around<br />the world.</h3>
+              <p>From faraway places to the little details that make them special, there’s always somewhere new to discover.</p>
+              <button class="button button-primary" id="country-button" type="button">Explore countries <span aria-hidden="true">↗</span></button>
+              <p class="explore-result" id="country-result" role="status" aria-live="polite">Pick a place and let your curiosity lead.</p>
+            </div>
+            <div class="world-visual" aria-label="Illustrated map of the world">
+              <span class="map-label map-label-one">NORTH AMERICA</span>
+              <span class="map-label map-label-two">EUROPE</span>
+              <span class="map-label map-label-three">ASIA</span>
+              <svg class="world-map" viewBox="0 0 640 340" role="img" aria-label="Soft blue illustration of world map continents">
+                <path d="m74 80 23-16 37 4 17 14 29 4 15 22-13 17-21 3-8 18-19 4-6 23-18 9-9-17-18-5-4-19-17-9 4-16-15-13 11-16-7-12 19-9Zm102 92 18 5 12 17-9 23 7 19-12 22-11 34-14 17-10-25-3-30-11-19 6-26-9-18 11-17 25-2Zm119-117 17-12 34 6 23 15 28-4 13 14-9 13-28 2-14 13-25-2-14 18-19-2-5-18-20-6 2-18 17-7Zm73 81 18-14 22 6 9 18-12 15-19 1-7 17-17-8 4-18-10-17Zm49-83 37-10 52 9 24 18 39 7 13 24-16 18-31 2-13 16-31-4-18 19-26-8-19 11-19-16-22 2-14-18 11-20-17-18 17-17-4-13 37-2Zm-31 89 26-8 29 14 4 22-17 19-20-4-12 19-22-8-8-21-19-12 8-17 31-4Zm-46 42 22 8 14 21-7 23-15 24-11 31-19 22-14-20-6-29-18-21 11-26 14-15Zm79 22 24-12 35 6 20 18-7 19-30 5-13 18-27-4-13-23 11-27Z" fill="currentColor" />
+                <circle cx="130" cy="119" r="5" fill="#fff" />
+                <circle cx="326" cy="113" r="5" fill="#fff" />
+                <circle cx="435" cy="128" r="5" fill="#fff" />
+                <path d="M130 119 Q220 48 326 113 T435 128" fill="none" stroke="#fff" stroke-dasharray="4 8" stroke-linecap="round" stroke-width="2" />
+              </svg>
+              <span class="map-sparkle map-sparkle-one" aria-hidden="true">✦</span>
+              <span class="map-sparkle map-sparkle-two" aria-hidden="true">✧</span>
+              <span class="map-caption">the world is full of wonder</span>
+            </div>
+          </article>
+
+          <div class="explore-grid">
+            <article class="discovery-card discovery-new">
+              <div class="discovery-card-top"><span class="discovery-icon" aria-hidden="true">✧</span><span class="discovery-index">01</span></div>
+              <h3>Discover something new</h3>
+              <p>A small spark of inspiration for your next rabbit hole.</p>
+              <p class="discovery-result" id="topic-result" role="status" aria-live="polite">Ready when you are.</p>
+              <button class="explore-card-button" id="topic-button" type="button">Find a topic <span aria-hidden="true">→</span></button>
+            </article>
+            <article class="discovery-card discovery-quiz">
+              <div class="discovery-card-top"><span class="discovery-icon" aria-hidden="true">✳</span><span class="discovery-index">02</span></div>
+              <h3>Explore quizzes</h3>
+              <p>Take a quick quiz and see what you already know.</p>
+              <a class="explore-card-button" href="#quizzes">Choose a quiz <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="discovery-card discovery-map">
+              <div class="discovery-card-top"><span class="discovery-icon" aria-hidden="true">⌖</span><span class="discovery-index">03</span></div>
+              <h3>Interactive world map</h3>
+              <p>Pick a destination and discover a country fact.</p>
+              <p class="discovery-result" id="map-result" role="status" aria-live="polite">Where will we go?</p>
+              <button class="explore-card-button" id="map-button" type="button">Pick a place <span aria-hidden="true">→</span></button>
+            </article>
+            <article class="discovery-card discovery-fact">
+              <div class="discovery-card-top"><span class="discovery-icon" aria-hidden="true">☼</span><span class="discovery-index">04</span></div>
+              <h3>Random fact</h3>
+              <p>A little unexpected knowledge for your day.</p>
+              <p class="discovery-result" id="fact-result" role="status" aria-live="polite">A new fact is just a tap away.</p>
+              <button class="surprise-button" id="surprise-button" type="button"><span aria-hidden="true">✦</span> Surprise me!</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section music-section" id="music">
+        <div class="container music-hub">
+          <header class="music-page-heading">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Your soundtrack, your way</p>
+            <h2>Music<span>.</span></h2>
+            <p class="section-intro">Find a song for this moment, share a favorite, or discover something unexpected.</p>
+            <nav class="music-jump-links" aria-label="Music sections">
+              <a href="#music-discover">Discover</a>
+              <a href="#find-song">Find a song</a>
+              <a href="#music-recommendations">Recommendations</a>
+              <a href="#genre-explorer">Genres</a>
+              <a href="#song-requests">Requests</a>
+              <a href="#song-submit">Share a song</a>
+            </nav>
+          </header>
+
+          <div class="music-feature-row">
+            <article class="song-day-card">
+              <div class="song-day-art" aria-hidden="true"><span>♫</span><i>✦</i><b>♪</b></div>
+              <div class="song-day-copy">
+                <span class="music-eyebrow">TODAY’S LITTLE SOUNDTRACK</span>
+                <h3>Song of the Day</h3>
+                <p class="featured-song-title" id="song-day-title"></p>
+                <p class="featured-song-artist" id="song-day-artist"></p>
+                <p class="song-day-note" id="song-day-note"></p>
+                <span class="song-day-caption">A new pick every day</span>
+              </div>
+            </article>
+            <article class="random-song-card">
+              <span class="random-music-icon" aria-hidden="true">🎲</span>
+              <p class="music-eyebrow">FEELING LUCKY?</p>
+              <h3>Let music surprise you.</h3>
+              <p>Meet a new-to-you song picked just for the fun of it.</p>
+              <div class="random-song-result" id="random-song-result" role="status" aria-live="polite">Your next favorite might be one tap away.</div>
+              <button class="surprise-button" id="random-song-button" type="button"><span aria-hidden="true">✦</span> Surprise me!</button>
+            </article>
+          </div>
+
+          <section class="music-block" id="music-discover">
+            <div class="music-block-heading">
+              <div><p class="eyebrow">A little of everything</p><h3>Discover music.</h3><p>Choose a mood or moment to find a few hand-picked listening ideas.</p></div>
+              <span class="music-heading-icon" aria-hidden="true">♫</span>
+            </div>
+            <div class="music-discover-grid">
+              <article class="music-discover-card"><span class="music-discover-icon">✧</span><h4>New discoveries</h4><p>Fresh sounds to add to your rotation.</p><button type="button" data-music-collection="discoveries">Find something new <span>→</span></button></article>
+              <article class="music-discover-card"><span class="music-discover-icon">★</span><h4>Popular songs</h4><p>Well-loved tracks worth a listen.</p><button type="button" data-music-collection="popular">See what’s popular <span>→</span></button></article>
+              <article class="music-discover-card"><span class="music-discover-icon">◉</span><h4>Different genres</h4><p>Wander into a new kind of sound.</p><button type="button" data-music-collection="genres">Explore sounds <span>→</span></button></article>
+              <article class="music-discover-card"><span class="music-discover-icon">✎</span><h4>Songs for studying</h4><p>Gentle sounds for a focused hour.</p><button type="button" data-music-collection="studying">Settle in <span>→</span></button></article>
+              <article class="music-discover-card"><span class="music-discover-icon">☾</span><h4>Songs for relaxing</h4><p>Slow things down and take a breath.</p><button type="button" data-music-collection="relaxing">Find a softer mood <span>→</span></button></article>
+              <article class="music-discover-card"><span class="music-discover-icon">↗</span><h4>Songs for working out</h4><p>Find a beat to keep you moving.</p><button type="button" data-music-collection="workout">Get moving <span>→</span></button></article>
+              <article class="music-discover-card"><span class="music-discover-icon">⌁</span><h4>Songs for traveling</h4><p>Good company for the journey.</p><button type="button" data-music-collection="traveling">Take the scenic route <span>→</span></button></article>
+              <article class="music-discover-card"><span class="music-discover-icon">♫</span><h4>Songs for dancing</h4><p>Turn up something with a little bounce.</p><button type="button" data-music-collection="dancing">Find your rhythm <span>→</span></button></article>
+            </div>
+            <div class="music-results" id="collection-results" role="status" aria-live="polite" hidden></div>
+          </section>
+
+          <div class="music-tools-grid">
+            <section class="music-panel-card" id="find-song">
+              <div class="music-block-heading compact">
+                <div><p class="eyebrow">Tell us the feeling</p><h3>Find a song.</h3><p>Choose a mood or activity and we’ll suggest a few matches.</p></div>
+                <span class="music-heading-icon" aria-hidden="true">⌕</span>
+              </div>
+              <form class="music-form" id="find-song-form">
+                <label for="find-song-description">What are you looking for?
+                  <input id="find-song-description" name="description" maxlength="180" placeholder="A calm song for studying…" />
+                </label>
+                <label for="find-song-category">Mood or activity
+                  <select id="find-song-category" name="category">
+                    <option value="studying">Studying / focus</option><option value="relaxing">Calm / relaxing</option><option value="workout">Energetic / workout</option><option value="traveling">Travel / daydreaming</option><option value="dancing">Dancing</option><option value="sad">Sad, but not too slow</option><option value="similar">Similar to an artist</option>
+                  </select>
+                </label>
+                <label for="find-song-artist">Artist to match (optional)
+                  <input id="find-song-artist" name="artist" maxlength="80" placeholder="An artist you already like" />
+                </label>
+                <button class="button button-primary" type="submit">Find my song <span aria-hidden="true">→</span></button>
+              </form>
+              <div class="music-results" id="find-song-results" role="status" aria-live="polite" hidden></div>
+            </section>
+
+            <section class="music-panel-card" id="genre-explorer">
+              <div class="music-block-heading compact">
+                <div><p class="eyebrow">Explore the sound</p><h3>Genre explorer.</h3><p>Pick a genre for a tiny introduction and some listening ideas.</p></div>
+                <span class="music-heading-icon genre-icon" aria-hidden="true">◉</span>
+              </div>
+              <label class="genre-select-label" for="genre-select">Choose a genre
+                <select id="genre-select">
+                  <option value="pop">Pop</option><option value="indie">Indie</option><option value="jazz">Jazz</option><option value="classical">Classical</option><option value="hiphop">Hip-hop</option><option value="electronic">Electronic</option><option value="rock">Rock</option><option value="rnb">R&amp;B</option>
+                </select>
+              </label>
+              <article class="genre-result-card" id="genre-result" aria-live="polite"></article>
+            </section>
+          </div>
+
+          <div class="music-tools-grid request-tools-grid">
+            <section class="music-panel-card submission-panel" id="song-submit">
+              <div class="music-block-heading compact">
+                <div><p class="eyebrow">Share what you love</p><h3>Submit a song.</h3><p>Tell us about a track you’d like to share or get feedback on.</p></div>
+                <span class="music-heading-icon" aria-hidden="true">♫</span>
+              </div>
+              <form class="music-form" id="song-submission-form">
+                <label for="submission-title">Song title<input id="submission-title" name="title" maxlength="120" required placeholder="Song title" /></label>
+                <label for="submission-artist">Artist<input id="submission-artist" name="artist" maxlength="100" required placeholder="Artist name" /></label>
+                <label for="submission-genre">Genre<select id="submission-genre" name="genre"><option>Pop</option><option>Indie</option><option>Jazz</option><option>Classical</option><option>Hip-hop</option><option>Electronic</option><option>Rock</option><option>R&amp;B</option><option>Other</option></select></label>
+                <label for="submission-why">Why do you like it?<textarea id="submission-why" name="why" rows="2" maxlength="300" placeholder="What makes this one special to you?"></textarea></label>
+                <label for="submission-feedback">What feedback would you like?<textarea id="submission-feedback" name="feedback" rows="2" maxlength="300" placeholder="Anything you’d like people to listen for?"></textarea></label>
+                <label class="music-checkbox"><input type="checkbox" id="submission-rating" name="ratingRequested" /> I’d like a rating</label>
+                <label class="music-checkbox"><input type="checkbox" id="submission-recommendation" name="recommendationRequested" /> I’d like a recommendation, too</label>
+                <button class="button button-primary" type="submit">Share song anonymously <span aria-hidden="true">↗</span></button>
+                <p class="music-privacy-note">No name, email, or personal details are requested. Requests are saved only in this browser.</p>
+                <p class="music-form-message" id="submission-message" role="status"></p>
+              </form>
+            </section>
+
+            <section class="music-panel-card recommendation-panel" id="music-recommendations">
+              <div class="music-block-heading compact">
+                <div><p class="eyebrow">A soundtrack that fits</p><h3>Music recommendations.</h3><p>Share your current favorites and the kind of sound you’re after.</p></div>
+                <span class="music-heading-icon genre-icon" aria-hidden="true">✧</span>
+              </div>
+              <form class="music-form" id="recommendation-form">
+                <label for="recommendation-favorite">A song or artist you like<input id="recommendation-favorite" name="favorite" maxlength="120" required placeholder="What’s on repeat lately?" /></label>
+                <label for="recommendation-genre">Favorite genre<select id="recommendation-genre" name="genre"><option>Pop</option><option>Indie</option><option>Jazz</option><option>Classical</option><option>Hip-hop</option><option>Electronic</option><option>Rock</option><option>R&amp;B</option></select></label>
+                <label for="recommendation-mood">Your mood<select id="recommendation-mood" name="mood"><option value="calm">Calm</option><option value="upbeat">Upbeat</option><option value="thoughtful">Thoughtful</option><option value="adventurous">Adventurous</option><option value="low-key">Low-key</option></select></label>
+                <label for="recommendation-kind">What kind of song do you want?<input id="recommendation-kind" name="kind" maxlength="120" required placeholder="A mellow song with great lyrics…" /></label>
+                <label for="recommendation-style">What should it sound like?
+                  <select id="recommendation-style" name="style"><option value="similar">Something similar</option><option value="different">Something completely different</option></select>
+                </label>
+                <button class="button button-primary" type="submit">Get recommendations <span aria-hidden="true">→</span></button>
+              </form>
+              <div class="music-results" id="recommendation-results" role="status" aria-live="polite" hidden></div>
+            </section>
+          </div>
+
+          <section class="music-block requests-block" id="song-requests">
+            <div class="music-block-heading">
+              <div><p class="eyebrow">Anonymous listening corner</p><h3>My music requests.</h3><p>See submissions from this browser. Rate a song from 1–10, leave a kind comment, or update its status.</p></div>
+              <span class="music-heading-icon requests-icon" aria-hidden="true">♡</span>
+            </div>
+            <p class="music-storage-note">Requests are stored locally on this device only; they are not published or shared with other visitors.</p>
+            <p class="music-form-message storage-error" id="music-storage-error" role="alert" hidden></p>
+            <div class="request-list" id="music-request-list" aria-live="polite"></div>
+          </section>
+        </div>
+      </section>
+
+      <section class="section community-section" id="community">
+        <div class="container community-hub">
+          <header class="community-page-heading">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> A kind corner of the internet</p>
+            <h2>Community<span>.</span></h2>
+            <p class="section-intro">Meet different perspectives, share what you love, and learn together.</p>
+            <nav class="community-jump-links" aria-label="Community sections">
+              <a href="#world-chat">World Chat</a>
+              <a href="#topic-rooms">Topic Rooms</a>
+              <a href="#introduce-yourself">Introduce Yourself</a>
+              <a href="#language-corner">Language Corner</a>
+              <a href="#community-questions">Questions</a>
+              <a href="#community-safety">Safety &amp; Rules</a>
+            </nav>
+          </header>
+
+          <aside class="community-demo-notice" role="note">
+            <span aria-hidden="true">ℹ</span>
+            <p><strong>Friendly demo:</strong> conversations are stored only in this browser and aren’t visible to other visitors. Lumora has no private messaging. Don’t share personal details.</p>
+          </aside>
+
+          <div class="community-dashboard">
+            <section class="community-panel world-chat-panel" id="world-chat">
+              <div class="community-panel-heading">
+                <div><p class="eyebrow">Open conversation</p><h3>🌍 World Chat</h3><p>Talk countries, culture, hobbies, music, school, and everyday interests.</p></div>
+                <span class="community-live-label"><i></i> Public topics</span>
+              </div>
+              <div class="room-filter-row" id="topic-rooms">
+                <span class="room-filter-label">ROOMS</span>
+                <div class="room-filters" role="group" aria-label="Filter conversations by room">
+                  <button type="button" class="room-filter is-active" data-room="All" aria-pressed="true">All</button>
+                  <button type="button" class="room-filter" data-room="Study" aria-pressed="false">Study</button>
+                  <button type="button" class="room-filter" data-room="Music" aria-pressed="false">Music</button>
+                  <button type="button" class="room-filter" data-room="Languages" aria-pressed="false">Languages</button>
+                  <button type="button" class="room-filter" data-room="Travel" aria-pressed="false">Travel</button>
+                  <button type="button" class="room-filter" data-room="Games" aria-pressed="false">Games</button>
+                  <button type="button" class="room-filter" data-room="Random" aria-pressed="false">Random</button>
+                </div>
+              </div>
+              <form class="community-compose" id="world-chat-form">
+                <label class="sr-only" for="world-chat-message">Write a public community post</label>
+                <textarea id="world-chat-message" maxlength="500" rows="3" required placeholder="Share a thought with the room…"></textarea>
+                <div class="community-compose-footer">
+                  <label for="world-chat-room">Post in
+                    <select id="world-chat-room">
+                      <option>Study</option><option>Music</option><option>Languages</option><option>Travel</option><option>Games</option><option>Random</option>
+                    </select>
+                  </label>
+                  <button type="submit" class="button button-primary">Post to room <span aria-hidden="true">↗</span></button>
+                </div>
+                <p class="community-inline-message" id="world-chat-message-status" role="status"></p>
+              </form>
+              <div class="community-feed" id="world-chat-feed" aria-live="polite"></div>
+            </section>
+
+            <aside class="community-side-column">
+              <section class="community-panel intro-panel" id="introduce-yourself">
+                <div class="community-panel-heading compact">
+                  <div><p class="eyebrow">Say a little hello</p><h3>👋 Introduce yourself</h3></div>
+                  <span class="community-icon-bubble">♡</span>
+                </div>
+                <form class="community-form" id="intro-form">
+                  <label for="intro-nickname">Nickname<input id="intro-nickname" name="nickname" maxlength="24" required placeholder="A nickname you like" /></label>
+                  <label for="intro-country">Country<select id="intro-country" name="country"><option value="">Prefer not to say</option><option>Argentina</option><option>Australia</option><option>Brazil</option><option>Canada</option><option>France</option><option>Germany</option><option>India</option><option>Italy</option><option>Japan</option><option>Kenya</option><option>Mexico</option><option>New Zealand</option><option>Spain</option><option>United Kingdom</option><option>United States</option><option>Somewhere else</option></select></label>
+                  <label for="intro-interests">Interests<input id="intro-interests" name="interests" maxlength="100" placeholder="Music, drawing, football…" /></label>
+                  <button type="submit" class="button button-primary">Save intro <span aria-hidden="true">→</span></button>
+                  <p class="community-privacy-note">Use a nickname only. Never add your full name, address, phone, or school.</p>
+                  <p class="community-inline-message" id="intro-status" role="status"></p>
+                </form>
+                <article class="intro-preview" id="intro-preview" hidden></article>
+              </section>
+
+              <section class="community-panel language-panel" id="language-corner">
+                <div class="community-panel-heading compact">
+                  <div><p class="eyebrow">Learn from each other</p><h3>🗣️ Language Corner</h3></div>
+                  <span class="community-icon-bubble lavender-bubble">あ</span>
+                </div>
+                <p class="community-panel-description">Practice a phrase and share what it means in your language.</p>
+                <label class="language-select-label" for="language-select">Pick a language
+                  <select id="language-select"><option value="Spanish">Spanish</option><option value="French">French</option><option value="Japanese">Japanese</option><option value="German">German</option><option value="Italian">Italian</option><option value="English">English</option></select>
+                </label>
+                <div class="language-phrase-card" id="language-phrase-card" aria-live="polite"></div>
+                <form class="community-form phrase-form" id="phrase-form">
+                  <label for="phrase-text">Share a helpful phrase<input id="phrase-text" name="phrase" maxlength="100" required placeholder="A friendly greeting…" /></label>
+                  <label for="phrase-meaning">What does it mean?<input id="phrase-meaning" name="meaning" maxlength="150" required placeholder="Add a simple translation" /></label>
+                  <button type="submit" class="community-secondary-button">Share phrase <span aria-hidden="true">↗</span></button>
+                </form>
+                <div class="phrase-feed" id="phrase-feed" aria-live="polite"></div>
+              </section>
+            </aside>
+          </div>
+
+          <section class="community-panel questions-panel" id="community-questions">
+            <div class="community-panel-heading">
+              <div><p class="eyebrow">Curious minds, kind answers</p><h3>❓ Community Questions</h3><p>Ask a question for the room. Helpful answers can be marked for everyone.</p></div>
+              <span class="community-icon-bubble lavender-bubble">?</span>
+            </div>
+            <form class="community-compose question-compose" id="community-question-form">
+              <label class="sr-only" for="community-question-input">Your public community question</label>
+              <textarea id="community-question-input" maxlength="400" rows="2" required placeholder="What would you like to ask the community?"></textarea>
+              <div class="community-compose-footer">
+                <label for="community-question-room">Topic
+                  <select id="community-question-room"><option>Study</option><option>Music</option><option>Languages</option><option>Travel</option><option>Games</option><option>Random</option></select>
+                </label>
+                <button type="submit" class="button button-primary">Ask the community <span aria-hidden="true">↗</span></button>
+              </div>
+              <p class="community-inline-message" id="community-question-status" role="status"></p>
+            </form>
+            <div class="question-feed" id="community-question-feed" aria-live="polite"></div>
+          </section>
+
+          <section class="community-panel safety-panel" id="community-safety">
+            <div class="community-panel-heading">
+              <div><p class="eyebrow">A kinder corner starts with us</p><h3>🛡️ Safety &amp; Rules</h3><p>Keep conversations respectful, public, and comfortable for everyone.</p></div>
+              <span class="community-icon-bubble safety-icon">✓</span>
+            </div>
+            <div class="safety-grid">
+              <article><span>01</span><h4>Be kind &amp; respectful</h4><p>Disagree with ideas thoughtfully. No bullying, slurs, harassment, or pressure.</p></article>
+              <article><span>02</span><h4>Keep personal details private</h4><p>Use a nickname. Never share contact details, exact location, school, or private accounts.</p></article>
+              <article><span>03</span><h4>Keep it public &amp; appropriate</h4><p>There are no direct messages here. Keep posts suitable for a shared student space.</p></article>
+              <article><span>04</span><h4>Pause before you post</h4><p>Share only what you’re comfortable with others reading. Ask a trusted adult if something feels wrong.</p></article>
+            </div>
+            <div class="safety-actions">
+              <p><strong>Need a quieter feed?</strong> Mute a nickname to hide its posts on this device. Report hides a post locally; it does not contact a moderator in this demo.</p>
+              <form class="mute-form" id="mute-form">
+                <label class="sr-only" for="mute-nickname">Nickname to mute</label>
+                <select id="mute-nickname"><option value="">Choose a nickname to mute</option></select>
+                <button class="community-secondary-button" type="submit">Mute nickname</button>
+              </form>
+              <div class="muted-list" id="muted-list" aria-live="polite"></div>
+              <p class="community-inline-message safety-status" id="safety-status" role="status"></p>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="closing">
+        <div class="container closing-inner">
+          <span class="closing-star" aria-hidden="true">✳</span>
+          <p>There’s more to learn.<br /><strong>And it can start with you.</strong></p>
+          <a class="button button-primary" href="#home">Back to the top <span aria-hidden="true">↑</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a href="#home" class="brand footer-brand" aria-label="Lumora home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none">
+              <path d="M16 3.5 18.8 13l9.7 3-9.7 2.9-2.8 9.6-2.9-9.6-9.6-2.9 9.6-3L16 3.5Z" fill="currentColor" />
+              <circle cx="25.5" cy="7" r="2" fill="currentColor" />
+            </svg>
+          </span>
+          <span class="brand-name">lumora<span>.</span></span>
+        </a>
+        <p>learn. explore. create. <span>Made for your kind of curious.</span></p>
+        <a class="back-top" href="#home">Back to the sunshine ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
